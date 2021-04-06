@@ -18,7 +18,7 @@ dnf install cobbler-web --allowerasing
 #### How I edited /etc/cobbler/dhcp.templates
 
 subnet 10.0.0.0 netmask 255.255.255.0 {
-     option routers             10.0.0.1;  
+    option routers             10.0.0.1;  
      option domain-name-servers 10.0.0.1;  
      option subnet-mask         255.255.255.0;  
      range dynamic-bootp        10.0.0.30 10.0.0.254;  
