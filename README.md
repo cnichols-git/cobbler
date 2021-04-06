@@ -17,12 +17,11 @@ dnf install cobbler-web --allowerasing
 
 #### How I edited /etc/cobbler/dhcp.templates
 
-<ul>subnet 10.0.0.0 netmask 255.255.255.0 {
-     <li>option routers             10.0.0.1;</li>
-     <li>option domain-name-servers 10.0.0.1;</li>  
-     <li>option subnet-mask         255.255.255.0;</li>  
-     <li>range dynamic-bootp        10.0.0.30 10.0.0.254;</li>  
-     <li>default-lease-time         21600;</li>  
-     <li>max-lease-time             43200;</li>  
-     <li>next-server                $next_server;</li>  
-</ul>
+subnet 10.0.0.0 netmask 255.255.255.0 {  
+&nbsp;&nbsp; option routers             10.0.0.1;  
+&nbsp;&nbsp; option domain-name-servers 10.0.0.1;  
+&nbsp;&nbsp; option subnet-mask         255.255.255.0;  
+&nbsp;&nbsp; range dynamic-bootp        10.0.0.30 10.0.0.254;  
+&nbsp;&nbsp; default-lease-time         21600;  
+&nbsp;&nbsp; max-lease-time             43200;  
+&nbsp;&nbsp; next-server                $next_server;  
