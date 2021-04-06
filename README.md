@@ -7,11 +7,7 @@ After resolving any dependicies i.e. dnf module install httpd:2.4/common
 dnf install epel-release  
 dnf module enable cobbler  
 dnf install cobbler  
-
 After resolving any dependicies i.e. dnf module install httpd:2.4/common  
-
-cobbler check - this will list out action items to resolve
-
 #### Installing the web moduel and it has a python3-django conflict so...
 dnf install cobbler-web --allowerasing
 
@@ -25,3 +21,4 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 &nbsp;&nbsp;&nbsp;&nbsp; default-lease-time         21600;  
 &nbsp;&nbsp;&nbsp;&nbsp; max-lease-time             43200;  
 &nbsp;&nbsp;&nbsp;&nbsp; next-server                $next_server;  
+cobbler check - this will list out action items to resolve  
