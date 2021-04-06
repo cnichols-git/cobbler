@@ -21,4 +21,5 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 &nbsp;&nbsp;&nbsp;&nbsp; default-lease-time         21600;  
 &nbsp;&nbsp;&nbsp;&nbsp; max-lease-time             43200;  
 &nbsp;&nbsp;&nbsp;&nbsp; next-server                $next_server;  
+
 cobbler check - this will list out action items to resolve  
