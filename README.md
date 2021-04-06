@@ -25,4 +25,5 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
      default-lease-time         21600;  
      max-lease-time             43200;  
      next-server                $next_server;  
-git has emojs :metal  
+git has emojs  
+:metal  
