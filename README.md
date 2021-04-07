@@ -40,3 +40,4 @@ success
 firewall-cmd --reload  
 success  
 #  
+https://ip/cobbler_web  
