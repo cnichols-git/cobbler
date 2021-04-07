@@ -25,18 +25,18 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 cobbler check - this will list out action items to resolve  
 
 #### Cobbler Web
-firewall-cmd --add-port=80/tcp --permanent
-success
-firewall-cmd --add-port=443/tcp --permanent
-success
-firewall-cmd --add-service=dhcp --permanent
-success
-firewall-cmd --add-port=69/tcp --permanent
-success
-firewall-cmd --add-port=69/udp --permanent
-success
-firewall-cmd --add-port=4011/udp --permanent
-success
-firewall-cmd --reload
-success
-#
+firewall-cmd --add-port=80/tcp --permanent  
+success  
+firewall-cmd --add-port=443/tcp --permanent  
+success  
+firewall-cmd --add-service=dhcp --permanent  
+success  
+firewall-cmd --add-port=69/tcp --permanent  
+success  
+firewall-cmd --add-port=69/udp --permanent  
+success  
+firewall-cmd --add-port=4011/udp --permanent  
+success  
+firewall-cmd --reload  
+success  
+#  
