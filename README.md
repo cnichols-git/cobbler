@@ -42,9 +42,10 @@ success
 #  
 https://ip/cobbler_web  
 To trouble shoot any issues stop cobbler  
+Check in var/log/cobbler/cobbler.log for errors
 
 systemctl stop cobblerd  
 
 Then issue cobblerd -F  
 
-This will run "cobblerd -F" to startup the daemon in foreground mode to confirm there aren't any other errors being generated during startup... said the google search  
+This will run the daemon in foreground mode to confirm there aren't any other errors being generated during startup... said the google search  
