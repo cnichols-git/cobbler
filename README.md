@@ -57,3 +57,27 @@ Then issue cobblerd -F
 
 This will run the daemon in foreground mode to confirm there aren't any other errors being generated during startup... said the google search  
 #
+
+
+Issues:
+
+[root@automate www]# cobbler import --name=centos8Stream --arch=x86_64 --path=/home/chris/Storage/Software/ISOs/CentOS-Stream-8-x86_64-20210316-dvd1.iso  
+task started: 2021-04-11_111808_import  
+task started (id=Media import, time=Sun Apr 11 11:18:08 2021)  
+running python triggers from /var/lib/cobbler/triggers/task/import/pre/*  
+running shell triggers from /var/lib/cobbler/triggers/task/import/pre/*  
+shell triggers finished successfully  
+Exception occured: <class 'cobbler.cexceptions.CX'>  
+Exception value: 'Command failed'  
+Exception Info:  
+  File "/usr/lib/python3.6/site-packages/cobbler/remote.py", line 98, in runrc = self._run(self)  
+
+  File "/usr/lib/python3.6/site-packages/cobbler/remote.py", line 305, in runnerself.logger  
+
+  File "/usr/lib/python3.6/site-packages/cobbler/api.py", line 1459, in import_treeutils.run_this(rsync_cmd, (spacer, mirror_url, path), self.logger)  
+
+  File "/usr/lib/python3.6/site-packages/cobbler/utils.py", line 931, in run_thisdie(logger, "Command failed")  
+
+  File "/usr/lib/python3.6/site-packages/cobbler/utils.py", line 108, in dieraise CX(msg)  
+
+!!! TASK FAILED !!!  
