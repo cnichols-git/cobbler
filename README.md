@@ -58,7 +58,7 @@ Then issue cobblerd -F
 This will run the daemon in foreground mode to confirm there aren't any other errors being generated during startup... said the google search  
 #
 
-
+mount -t iso9660 -o loop,ro /path/to/isos/Fedora-Server-dvd-x86_64-28-1.1.iso /mnt  
 How to import:  
 
 cobbler import --name=fedora27 --arch=x86_64 --path=/mnt  
